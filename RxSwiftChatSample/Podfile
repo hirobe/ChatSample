@@ -1,0 +1,31 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios,'12.0'
+xcodeproj 'RxSwiftChatSample.xcodeproj'
+
+def pods
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxKeyboard'
+    pod 'Nuke'
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Firestore'
+    pod 'FirebaseUI/Auth'
+    pod 'FirebaseUI/Email'
+    pod 'JGProgressHUD'
+end
+
+target 'RxSwiftChatSample' do
+    use_frameworks!
+
+    pods
+end
+
+target 'RxSwiftChatSampleTests' do
+  use_frameworks!
+  
+  pods
+end
+
